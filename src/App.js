@@ -7,6 +7,7 @@ import DC from './components/DC';
 function App() {
   return (
     <div>
+      <h1 id='logo'>Heroes</h1>
       <Header/>
       <Navbar />
       <Marvel />

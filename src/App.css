@@ -2,46 +2,44 @@
   margin: 0;
   padding: 0;
 }
-#canvas1{
-  position: absolute;
-}
-.controls{
-  position: absolute;
-  z-index: 100;
-}
+
 img{
   width: 100%;
   height: 100vh;
 }
-#home{
-  position: absolute;
-  top: 100vh;
-}
-#navbar{
-  background-color: aquamarine;
-  display: flex;
-}
 #logo{
-  padding: 1rem;
+  position: fixed;
+  background: aliceblue;
 }
-#navbar ul {
-  display: flex;
+input{
+  display: block;
+  margin-left: auto;
+  margin-right: 4rem;
+  height: 2rem;
+}
+.container{
   align-items: center;
+  border: 1px solid rgb(151, 151, 151);
+  margin: 1rem 5rem;
+  overflow: hidden;
 }
-#navbar ul li{
-  list-style: none;
+.cat-name{
+  height: 2rem;
+  width: 5rem;
+  background-color: aqua;
 }
-#navbar ul li a{
-  text-decoration: none;
-}
-.card{
-  border: 2px solid black;
-  margin: 2rem;
-}
-.product
-{
+.product{
   display: inline-flex;
   border: 2px solid black;
   margin: 2rem;
   padding: 2rem;
+  min-width: 6rem;
+  height: 8rem;
+}
+.container-btn{
+  float: right;
+}
+.product-container{
+  display: flex;
+  align-items: center;
 }

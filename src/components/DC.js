@@ -6,9 +6,12 @@ export default function DC() {
         <Product name={item.name}/>
       ))
       return (
-        <div>
-          <h2>DC</h2>
+        <div className='container'>
+          <button className="container-btn">Show more</button>
+          <div className='product-container'>
+          <h2 className='cat-name'>DC</h2>
            {items}
+          </div>
         </div>
       )
 }
