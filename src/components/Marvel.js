@@ -1,44 +1,64 @@
 import React from 'react'
 import Product from './Product'
+import { Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Marvel() {
-  const items = marvelData.map(item => (
-    <Product name={item.name}/>
-  ))
+  const [hide, setHide] = React.useState(false);
+  function handleClick(){
+    setHide(prev => !prev)
+  }
+
   return (
     <div className='container'>
-      <button className="container-btn">Show more</button>
-      <div className='product-container'>
-      <h2 className='cat-name'>Marvel</h2>
-       {items}
+      <button className='container-btn' onClick={handleClick}>{!hide ? 'View All' : 'Show Less'}</button>
+      <div className= {hide ? 'product-container expand' : 'product-container'}>
+      <div className={!hide? 'cat-name': 'hide_it'}><h2>MARVEL</h2></div>
+      <div className={!hide ? 'hide_it' : 'expand'}>
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      </div>
+      <Swiper
+        modules={[ Pagination, A11y]}
+        spaceBetween={40}
+        slidesPerView={4}
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+        className={hide ? 'hide_it' : ''}
+      >
+        <SwiperSlide>
+          <Product name="thor" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="ironman" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="cap america" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="bkack widow" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="dr. strange" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="spiderman" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="bkack widow" />
+        </SwiperSlide>
+      </Swiper>
       </div>
     </div>
   )
 }
 
-const marvelData = [
-  {
-    id: 1,
-    name: "thor"
-  },
-  {
-    id: 2,
-    name: "ironman"
-  },
-  {
-    id: 3,
-    name: "cap america"
-  },
-  {
-    id: 4,
-    name: "black widow"
-  },
-  {
-    id: 5,
-    name: "cap america"
-  },
-  {
-    id: 6,
-    name: "black widow"
-  }
-]

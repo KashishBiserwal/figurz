@@ -1,22 +1,91 @@
 import React from 'react'
 import Product from './Product'
+import { Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function DC() {
-    const items = dcData.map(item => (
-        <Product name={item.name}/>
-      ))
+  const [hide, setHide] = React.useState(false);
+  function handleClick(){
+    setHide(prev => !prev)
+  }
       return (
         <div className='container'>
-          <button className="container-btn">Show more</button>
-          <div className='product-container'>
-          <h2 className='cat-name'>DC</h2>
-           {items}
-          </div>
-        </div>
+      <button className='container-btn' onClick={handleClick}>{!hide ? 'View All' : 'Show Less'}</button>
+      <div className= {hide ? 'product-container expand' : 'product-container'}>
+      <div className={!hide? 'cat-name': 'hide_it'}><h2>DC</h2></div>
+      <div className={!hide ? 'hide_it' : 'expand'}>
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      <Product name="thor" />
+      </div>
+      <Swiper
+        modules={[ Pagination, A11y]}
+        spaceBetween={40}
+        slidesPerView={4}
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+        className={hide ? 'hide_it' : ''}
+      >
+        <SwiperSlide>
+          <Product name="thor" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="ironman" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="cap america" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="bkack widow" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="dr. strange" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="spiderman" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Product name="bkack widow" />
+        </SwiperSlide>
+      </Swiper>
+      </div>
+    </div>
       )
 }
 
 const dcData = [
+    {
+      id: 1,
+      name: "batman"
+    },
+    {
+      id: 2,
+      name: "joker"
+    },
+    {
+      id: 1,
+      name: "batman"
+    },
+    {
+      id: 2,
+      name: "joker"
+    },
+    {
+      id: 1,
+      name: "batman"
+    },
+    {
+      id: 2,
+      name: "joker"
+    },
     {
       id: 1,
       name: "batman"
