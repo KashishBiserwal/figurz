@@ -1,49 +1,51 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-img{
-  width: 100%;
-  height: 100vh;
-}
-#logo{
-  position: fixed;
-  background: aliceblue;
+body{
+  background-color: #dbdbdb;
 }
 input{
+  top: 100vh;
   display: block;
-  margin-left: auto;
-  margin-right: 4rem;
+ 
+  margin: 4rem 2rem 1rem auto;
+
   height: 2rem;
 }
 .container{
   align-items: center;
-  border: 1px solid rgb(151, 151, 151);
-  margin: 1rem 5rem;
+  margin: 5rem 5rem;
   overflow: hidden;
+  border-radius: 25px 4px 4px 25px;
 }
 .cat-name{
-  height: 17rem;
+  height: 19rem;
   min-width: 5rem;
-  background-color: aqua;
+  background-color: #242424;
 }
 .cat-name h2{
   writing-mode: vertical-lr;
   text-orientation: upright;
   margin: auto;
+  color: #dbdbdb;
 }
 .product{
   display: inline-flex;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   margin: 2rem;
   padding: 2rem;
   min-width: 6rem;
   max-width: 6rem;
-  height: 8rem;
+  height: 10rem;
 }
 .container-btn{
   float: right;
+  cursor: pointer;
+}
+.container-btn:hover{
+  color: white;
 }
 .product-container{
   display: flex;
@@ -62,7 +64,7 @@ input{
   bottom: 0px !important;
 }
 .box{
-  border: 1px solid blueviolet;
+  border: 1px solid rgb(255, 255, 255);
   margin: 2rem;
   padding: 2rem;
 }
@@ -82,4 +84,66 @@ input{
 }
 .hide_it{
   display: none;
+}
+:root {
+  --swiper-theme-color: #242424 !important;
+}
+button{
+  background-color: #242424;
+  border: 0;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 6px;
+  color: #dbdbdb;
+}
+
+.grid-container {
+  margin: 0 7rem 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-item {
+  flex: 1 0 12%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 120px;
+  max-width: 130px;
+  text-align: center;
+  margin: 9px;
+}
+#logo{
+  font-size: 2rem;
+  padding-left: 10px;
+}
+.grid-item img{
+  height: 115px;
+}
+.grid-item img:hover{
+  cursor: pointer;
+  height: 145px;
+  z-index: 100 !important;
+}
+
+
+#content{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 9rem;
+
+}
+#content img{
+  max-width: 8rem;
+}
+.scrolled{
+  transform: translateY(-100%);
+  transition: 2s;
+}
+.not-scrolled{
+  transform: translateY(0%);
+  transition: 2s;
+}
+#lines{
+  margin-left: 10.5rem;
 }

@@ -14,7 +14,7 @@ export default function DC() {
         <div className='container'>
       <button className='container-btn' onClick={handleClick}>{!hide ? 'View All' : 'Show Less'}</button>
       <div className= {hide ? 'product-container expand' : 'product-container'}>
-      <div className={!hide? 'cat-name': 'hide_it'}><h2>DC</h2></div>
+      <div className={!hide? 'cat-name': 'hide_it'}><div className='title'><h2 style={{marginTop: "7rem"}}>DC</h2></div></div>
       <div className={!hide ? 'hide_it' : 'expand'}>
       <Product name="thor" />
       <Product name="thor" />
