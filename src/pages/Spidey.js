@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export default function Content() {
+export default function Spidey() {
     const [scroll, setScroll] = useState(false);
  useEffect(() => {
    window.addEventListener("scroll", () => {
@@ -9,7 +9,7 @@ export default function Content() {
  }, []);
   return (
     <div id='content' className={scroll ? 'scrolled': 'not-scrolled'}>
-        <img src='images/big-spidey.png'/>
+        <img src='images/big-spidey.png' alt="spider-man"/>
     </div>
   )
 }

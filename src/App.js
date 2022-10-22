@@ -1,23 +1,24 @@
-import './App.css';
-import Marvel from './components/Marvel';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import DC from './components/DC';
-import React from 'react';
-import Content from './components/Content';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Products from './pages/Products';
+import Error from './pages/Error';
+import SingleProduct from './pages/SingleProduct';
+import SharedProductLayout from './pages/SharedProductLayout';
+import './App.css'
 function App() {
-
-  
   return (
-    <div>
-      <div id='logo'>Logo</div>
-      <Header/>
-      <Content />
-      <Navbar />
-      <Marvel />
-      <DC />
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<SharedProductLayout />}>
+            <Route index element={<Products />} />
+            <Route path=':productId' element={<SingleProduct />} />
+          </Route>
+          <Route path='*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
 export default App;
+
