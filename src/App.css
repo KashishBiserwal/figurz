@@ -12,7 +12,7 @@ body{
 }
 .container{
   align-items: center;
-  margin: 5rem 5rem;
+  margin: 7rem 5rem;
   overflow: hidden;
 }
 .product-container{
@@ -20,35 +20,38 @@ body{
 }
 
 .grid-container {
-  margin: 0 7rem 0 3rem;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 3rem 11rem 0 15rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  columns: 7;
   justify-content: center;
 }
 .grid-item {
   flex: 1 0 12%;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  height: 120px;
-  max-width: 130px;
+  height: 100px;
+  max-width: 105px;
   text-align: center;
-  margin: 9px;
+  margin: 5px;
 }
 
 .grid-item img{
-  height: 115px;
+  height: 90px;
 }
 .grid-item img:hover{
   cursor: pointer;
-  height: 145px;
-  z-index: 100 !important;
+  height: 110px;
+  z-index: 100;
 }
-
+.clicked-div{
+  background-color: #242424;
+}
 /* spidey */
 #content{
   position: fixed;
   top: 0;
-  right: 0;
+  right: 1rem;
   width: 9rem;
 }
 #content img{
@@ -132,6 +135,8 @@ article button a{
   min-width: 5rem;
   background-color: #242424;
   border-radius: 20px 0 0 20px;
+  display: flex;
+  justify-content: center;
 }
 .cat-name h2{
   writing-mode: vertical-lr;
@@ -139,7 +144,9 @@ article button a{
   margin: auto;
   color: #dbdbdb;
 }
-
+.title{
+  margin-top: 4.2rem;
+}
 /* single product page */
 .product{
   margin: 6rem 10rem 0 10rem;
@@ -177,4 +184,50 @@ article button a{
   border-radius: 5px;
   padding: 6px;
   border: 0;
+}
+
+/* search bar */
+
+
+input{
+  position: absolute;
+  right: 5rem;
+  color: #242424;
+  padding: 4px;
+  margin-top: 1rem;
+  font-size: 13px;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  outline: none;
+  border-radius: 35px;
+  transition: all 0.5s;
+}
+input::placeholder{
+  color: #545454;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+input:focus::placeholder{
+  opacity: 1;
+}
+input:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2),
+              0 6px 20px 0 #737373;
+}
+input:focus,
+input:not(:placeholder-shown) {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2),
+              0 6px 20px 0 #737373;
+}
+
+.gif{
+  border: 2px solid rebeccapurple;
+  position: absolute;
+  top: 16rem;
+  left: 1rem;
+  width: 13rem;
+  height: 9rem;
 }

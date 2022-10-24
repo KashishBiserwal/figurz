@@ -8,6 +8,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import Product from './Product';
 import Spidey from './Spidey';
+import Search from '../components/Search';
+import Gif from './Gif';
 
 
 const Products = () => {
@@ -18,8 +20,10 @@ const Products = () => {
   return (
     <section>
       <div id='logo'> Logo</div>
+      <Gif />
       <Header />
       <Spidey />
+      <Search />
       <div className='container'>
         <button onClick={handleClick} className="show">{show ? 'Show Less' : 'View All'}</button>
         <div className= {!show ? 'product-container expand' : 'product-container'}>

@@ -9,10 +9,11 @@ const products = [
   },
   {
     id: '2',
-    name: 'ironman',
-
-    image:
-      'images/ironman.png',
+    name: 'Harry Potter',
+    image:'images/hp.jpg',
+    image2: 'images/hp1.jpg',
+    image3: 'images/hp2.jpg',
+    description: '100% Pleased Assurance: If you have any questions, please feel free to contact us.; Suitable for everyones collection, desktop decoration and theme scene arrangement and perfect cake decoration, they are good ornament for bedroom, car, drawing room and so on.'
   },
   {
     id: '3',
