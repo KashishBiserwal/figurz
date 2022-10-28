@@ -21,6 +21,7 @@ const App = () => {
           <Route path="startrek" element={<Startrek />} />
           <Route path=':productId' element={<SingleProduct />} />
           <Route path="*" element={<Error />} />
+          <Route path="undefined" element={<Error />} />
         </Route>
       </Routes>
     </>
