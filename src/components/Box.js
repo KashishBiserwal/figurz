@@ -1,13 +1,10 @@
-import React, {useState}  from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Box(props) {
-    const [show, setShow] = useState(true)
-    function handleClick(){
-      setShow(prev => !prev)
-    }
   return (
-    <div className={show ? "grid-item" : "grid-item clicked-div"}>
-        <img src={props.img} alt='haha' onClick={handleClick}/>
+    <div className="grid-item">
+        <Link to={`${props.id}`}><img src={props.img} alt={`${props.id}`}/></Link>
     </div>
   )
 }
