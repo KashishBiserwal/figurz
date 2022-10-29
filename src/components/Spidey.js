@@ -4,7 +4,7 @@ export default function Spidey() {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
       window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 270);
+      setScroll(window.scrollY > 100);
       });
     }, []);
   return (

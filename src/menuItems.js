@@ -23,19 +23,19 @@ export const menuItems = [
         title: 'Anime',
         url: 'anime',
       },
-      {
-        title: 'Extra',
-        submenu: [
-          {
-            title: 'Something',
-            url: '/',
-          },
-          {
-            title: 'Else',
-            url: '/',
-          },
-        ],
-      },
+      // {
+      //   title: 'Extra',
+      //   submenu: [
+      //     {
+      //       title: 'Something',
+      //       url: '/',
+      //     },
+      //     {
+      //       title: 'Else',
+      //       url: '/',
+      //     },
+      //   ],
+      // },
     ],
   },
 ];

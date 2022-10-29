@@ -22,7 +22,7 @@ header {
 .logo {
   text-decoration: none;
   font-size: 40px;
-  color: inherit;
+  color: #c3073f;
   margin-right: 20px;
   font-family: 'Stick No Bills', sans-serif;
 }
@@ -120,7 +120,7 @@ input{
   background: transparent;
   width: 40px;
   height: 40px;
-  border: 2px solid #dbdbdb;
+  border: 2px solid #c3073f;
   outline: none;
   border-radius: 35px;
   transition: all 0.5s;
@@ -184,7 +184,7 @@ article h2{
   /* max-width: 12rem; */
 }
 .btn{
-  background-color: red;
+  background-color: #c3073f;
   color: white;
   padding: 10px;
   border: 0;
@@ -208,7 +208,8 @@ article h2{
   cursor: pointer;
 }
 .grid-item{
-  border: 2px solid rgba(0, 0, 0, 0.34);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
   width: 6rem;
   height: 6rem;
   margin: 5px;
@@ -278,6 +279,9 @@ article h2{
             "a c";
 }
 
+.error{
+  height: 44vh;
+}
 
 .anim{
   animation: 1s slide-up;
