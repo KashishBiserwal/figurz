@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../routes/Home';
 import About from '../routes/About';
 import Layout from './Layout';
-import Marvel from '../routes/Marvel';
+import Marvel from '../Marvel/Marvel';
 import DC from '../routes/DC';
 import Anime from '../routes/Anime';
 import Startrek from '../routes/Startrek';

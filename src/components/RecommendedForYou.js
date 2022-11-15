@@ -3,20 +3,24 @@ import React from 'react'
 export default function RecommendedForYou() {
   return (
     <div className='content-container p'>
-        <h3 className='container-title'>Recommended For You</h3>
+        <h3 className='container-title'>Recommended Products</h3>
         <div className='content-boxes'>
             <div className='categories'>
                 <div className='cat-item'>
-                    Item 1
+                    <img src='images/thor-p.jpg' alt='no'/>
+                    <h3 className='cat'>Item</h3>
                 </div>
                 <div className='cat-item'>
-                    Item 2
+                    <img src='images/thor-p.jpg' alt='no'/>
+                    <h3 className='cat'>Item</h3>
                 </div>
                 <div className='cat-item'>
-                    Item 2
+                    <img src='images/thor-p.jpg' alt='no'/>
+                    <h3 className='cat'>Item</h3>
                 </div>
                 <div className='cat-item'>
-                    tem 2
+                    <img src='images/thor-p.jpg' alt='no'/>
+                    <h3 className='cat'>Item</h3>
                 </div>
             </div>
         </div>

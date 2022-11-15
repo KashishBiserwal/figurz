@@ -1,14 +1,37 @@
 const data = [
-    // marvel
+    // ironman
     {
-        id: 'ironman',
-        name: 'Iron Man',
+        id: 'ironman-tshirt',
+        name: 'Iron Man T-Shirt',
         description: 'BonZeaL Superhero Solar Powered Ironman Bobblehead Shaking Head Action Figure Toy',
         img: 'images/ironman-p.jpg',
         img2: 'images/ironman2.jpg',
         img3: 'images/ironman3.jpg',
         buy: 'https://amzn.eu/d/02WiofW',
-        category: 'marvel'
+        category: 'marvel',
+        hero: 'ironman'
+    },
+    {
+        id: 'ironman-cap',
+        name: 'Iron Man Cap',
+        description: 'BonZeaL Superhero Solar Powered Ironman Bobblehead Shaking Head Action Figure Toy',
+        img: 'images/ironman-p.jpg',
+        img2: 'images/ironman2.jpg',
+        img3: 'images/ironman3.jpg',
+        buy: 'https://amzn.eu/d/02WiofW',
+        category: 'marvel',
+        hero: 'ironman'
+    },
+    {
+        id: 'ironman-shirt',
+        name: 'Iron Man Shirt',
+        description: 'BonZeaL Superhero Solar Powered Ironman Bobblehead Shaking Head Action Figure Toy',
+        img: 'images/ironman-p.jpg',
+        img2: 'images/ironman2.jpg',
+        img3: 'images/ironman3.jpg',
+        buy: 'https://amzn.eu/d/02WiofW',
+        category: 'marvel',
+        hero: 'ironman'
     },
     {
         id: 'thor',

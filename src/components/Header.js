@@ -9,7 +9,7 @@ const Header = () => {
       <div className="nav-area">
         <div className='top'>
           <Link to="/" className="logo">FIGURZ</Link>
-          <div >
+          <div className='search-bar'>
             <BsSearch className='search-icon'/>
             <input type='text' placeholder='Search...'></input>
           </div>

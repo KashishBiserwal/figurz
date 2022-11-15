@@ -1,17 +1,15 @@
 import React from 'react'
-import Spidey from '../components/Spidey'
 import BrowseCategories from '../components/BrowseCategories'
 import FearturedHeroes from '../components/FeaturedHeroes'
 import RecommendedForYou from '../components/RecommendedForYou'
 export default function Home() {
   return (
     <div>
-      <Spidey />
       <div style={{height: '50vh'}}></div>
-      <div className='sale'><h4>UPTO 40% OFF</h4></div>
+      <div className='sale p'><h2>UPTO 40% OFF</h2></div>
       <BrowseCategories />
       <FearturedHeroes />
-      <div className='sale'><h4>UPTO 40% OFF</h4></div>
+      <div className='sale p'><h2>ENJOY FREE SHIPING ON ORDERS $50 AND OVER</h2></div>
       <RecommendedForYou />
     </div>
   )

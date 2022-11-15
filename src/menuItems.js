@@ -1,71 +1,101 @@
 export const menuItems = [
   {
-    title: 'Search by Category',
+    title: 'Shop by Category',
     url: '/about',
     submenu: [
       {
-        title: 'Marvel',
+        title: 'T-shirts',
         url: 'marvel',
+        submenu: [
+          {
+            title: 'Men',
+            url: 'thor'
+          },
+          {
+            title: 'Women',
+            url: 'ironman'
+          },
+          {
+            title: 'Kids',
+            url: 'captainamerica'
+          },
+          {
+            title: 'Hulk',
+            url: 'hulk'
+          },
+        ]
       },
       {
         title: 'DC',
         url: 'dc',
-      },
-      {
-        title: 'Star Trek',
-        url: 'startrek',
-      },
-      {
-        title: 'Anime',
-        url: 'anime',
-      },
-      {
-        title: 'Extra',
         submenu: [
           {
-            title: 'Something',
-            url: '/',
+            title: 'Batman',
+            url: 'batman'
           },
           {
-            title: 'Else',
-            url: '/',
+            title: 'Flash',
+            url: 'flash'
           },
-        ],
+          {
+            title: 'Joker',
+            url: 'joker'
+          },
+          {
+            title: 'Wonder Woman',
+            url: 'wonderwoman'
+          },
+        ]
       },
     ],
   },
   {
-    title: 'Search by Hero',
+    title: 'Shop by Hero',
     url: '/about',
     submenu: [
       {
         title: 'Marvel',
-        url: 'marvel',
+        url: 'Marvel',
+        submenu: [
+          {
+            title: 'Thor',
+            url: 'thor'
+          },
+          {
+            title: 'Iron Man',
+            url: 'Ironman'
+          },
+          {
+            title: 'Captain America',
+            url: 'captainamerica'
+          },
+          {
+            title: 'Hulk',
+            url: 'hulk'
+          },
+        ]
       },
       {
         title: 'DC',
         url: 'dc',
-      },
-      {
-        title: 'Star Trek',
-        url: 'startrek',
-      },
-      {
-        title: 'Anime',
-        url: 'anime',
-      },
-      {
-        title: 'Extra',
         submenu: [
           {
-            title: 'Something',
-            url: '/',
+            title: 'Batman',
+            url: 'batman'
           },
           {
-            title: 'Else',
-            url: '/',
+            title: 'Flash',
+            url: 'flash'
           },
-        ],
+          {
+            title: 'Joker',
+            url: 'joker'
+          },
+          {
+            title: 'Wonder Woman',
+            url: 'wonderwoman'
+          },
+        ]
       },
     ],
   },
