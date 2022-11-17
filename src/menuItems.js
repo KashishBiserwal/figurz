@@ -1,7 +1,6 @@
 export const menuItems = [
   {
     title: 'Shop by Category',
-    url: '/about',
     submenu: [
       {
         title: 'T-shirts',
@@ -51,7 +50,6 @@ export const menuItems = [
   },
   {
     title: 'Shop by Hero',
-    url: '/about',
     submenu: [
       {
         title: 'Marvel',

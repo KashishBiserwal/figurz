@@ -1,7 +1,7 @@
-const marvelFilterReducer = (state, action) => {
+const DcFilterReducer = (state, action) => {
     switch(action.type){
 
-        case "LOAD_MARVEL_FILTER_PRODUCTS":
+        case "LOAD_DC_FILTER_PRODUCTS":
 
             let priceArr = action.payload.map((item) => item.price)
             let maxPrice = Math.max(...priceArr);
@@ -9,8 +9,8 @@ const marvelFilterReducer = (state, action) => {
 
             return {
                 ...state,
-                marvel_filter_products: [...action.payload],
-                all_marvel_products: [...action.payload],
+                dc_filter_products: [...action.payload],
+                all_dc_products: [...action.payload],
                 filters: { ...state.filters, maxPrice: maxPrice, price: maxPrice, minPrice: minPrice},
             }
         
@@ -52,7 +52,7 @@ const marvelFilterReducer = (state, action) => {
 
             return {
                 ...state,
-                marvel_filter_products: newSortData,
+                dc_filter_products: newSortData,
             }
         
         case "UPDATE_FILTERS_VALUE" :
@@ -67,8 +67,8 @@ const marvelFilterReducer = (state, action) => {
 
         
         case 'FILTER_PRODUCTS':
-            let {all_marvel_products} = state;
-            let tempFilterProduct = [...all_marvel_products];
+            let {all_dc_products} = state;
+            let tempFilterProduct = [...all_dc_products];
             const {text, category, price} = state.filters;
             if(text) {
                 tempFilterProduct = tempFilterProduct.filter((item) => {
@@ -87,7 +87,7 @@ const marvelFilterReducer = (state, action) => {
             }
             return {
                 ...state,
-                marvel_filter_products: tempFilterProduct,
+                dc_filter_products: tempFilterProduct,
             }
 
         case 'CLEAR_FILTERS':
@@ -108,4 +108,4 @@ const marvelFilterReducer = (state, action) => {
     }
 }
 
-export default marvelFilterReducer;
+export default DcFilterReducer;

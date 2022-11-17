@@ -1,4 +1,4 @@
-const marveldata = [
+const DcData = [
     {
         id: 'm1',
         name: 'Spider-Man Venom Short Sleeve T-Shirt',
@@ -118,4 +118,4 @@ const marveldata = [
     },
 ]
 
-export default marveldata;
+export default DcData;

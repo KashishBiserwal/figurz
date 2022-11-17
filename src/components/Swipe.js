@@ -12,8 +12,8 @@ export default function Swipe() {
           loop={true}
           grabCursor={true}
         >
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sam.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/savengers.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/spiderman' img='images/nav-swiper/sam.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/ironman' img='images/nav-swiper/savengers.jpg'/></SwiperSlide>
           <SwiperSlide><Box link='batmanAll' img='images/nav-swiper/sb.jpg'/></SwiperSlide>
           <SwiperSlide><Box link='thor' img='images/nav-swiper/sba.jpg'/></SwiperSlide>
           <SwiperSlide><Box link='thor' img='images/nav-swiper/sbp.jpg'/></SwiperSlide>
@@ -28,10 +28,6 @@ export default function Swipe() {
           <SwiperSlide><Box link='thor' img='images/nav-swiper/sjoker.jpg'/></SwiperSlide>
           <SwiperSlide><Box link='thor' img='images/nav-swiper/ssm.jpg'/></SwiperSlide>
           <SwiperSlide><Box link='thor' img='images/nav-swiper/sspiderman.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/ssw.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sv.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/st.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/swol.jpg'/></SwiperSlide>
         </Swiper>
     </div>
   )
