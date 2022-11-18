@@ -7,7 +7,7 @@ const DcFilterContext = createContext();
 const initialState = {
     dc_filter_products: [],
     all_dc_products: [],
-    sorting_value: "lowest",
+    sorting_value: "",
     filters:{
         text: '',
         category: '',

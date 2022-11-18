@@ -12,22 +12,25 @@ export default function Swipe() {
           loop={true}
           grabCursor={true}
         >
-          <SwiperSlide><Box link='Hero/spiderman' img='images/nav-swiper/sam.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='Hero/ironman' img='images/nav-swiper/savengers.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='batmanAll' img='images/nav-swiper/sb.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sba.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sbp.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sca.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sd.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sdd.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sds.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sf.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sgroot.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sim.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sjl.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sjoker.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/ssm.jpg'/></SwiperSlide>
-          <SwiperSlide><Box link='thor' img='images/nav-swiper/sspiderman.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/superman' img='images/nav-swiper/ssm.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/captainamerica' img='images/nav-swiper/sca.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/flash' img='images/nav-swiper/sf.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/ironman' img='images/nav-swiper/sim.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/spiderman' img='images/nav-swiper/sspiderman.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/wonderwoman' img='images/nav-swiper/sww.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/punisher' img='images/nav-swiper/sp.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/blackpanther' img='images/nav-swiper/sbp.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/batman' img='images/nav-swiper/sb.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/superman' img='images/nav-swiper/ssm.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/captainamerica' img='images/nav-swiper/sca.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/flash' img='images/nav-swiper/sf.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/ironman' img='images/nav-swiper/sim.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/spiderman' img='images/nav-swiper/sspiderman.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/wonderwoman' img='images/nav-swiper/sww.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/punisher' img='images/nav-swiper/sp.jpeg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/blackpanther' img='images/nav-swiper/sbp.jpg'/></SwiperSlide>
+          <SwiperSlide><Box link='Hero/batman' img='images/nav-swiper/sb.jpeg'/></SwiperSlide>
+          
         </Swiper>
     </div>
   )

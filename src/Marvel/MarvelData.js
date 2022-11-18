@@ -13,7 +13,7 @@ const marveldata = [
     {
         id: 'm2',
         name: `Iron Man Suit-Up Men's Costume T-Shirt`,
-        hero: 'spiderman',
+        hero: 'ironman',
         category: 'T-Shirts',
         price: 400,
         img1: 'tsironman1.jpg',
@@ -102,7 +102,7 @@ const marveldata = [
         id: 'm10',
         name: 'Doctor Strange Multiverse of Madness Funko Pop! Vinyl Figure',
         category: 'Figures',
-        hero: 'marvel',
+        hero: 'doctorStrange',
         price: 100,
         img1: 'fidoctor1.jpg',
         img2: 'fidoctor2.jpg',
@@ -116,6 +116,26 @@ const marveldata = [
         img1: 'fiwolverine1.jpg',
         img2: 'fiwolverine2.jpg',
     },
+    {
+        id: 'm12',
+        name: `Iron Man T-Shirt`,
+        hero: 'ironman',
+        category: 'T-Shirts',
+        price: 400,
+        img1: 'ts2ironman1.jpg',
+        img2: 'ts2ironman2.jpg',
+    },
+    {
+        id: 'm13',
+        name: 'Punisher T-Shirt',
+        category: 'T-Shirts',
+        hero: 'punisher',
+        price: 150,
+        img1: 'tspunisher1.jpg',
+        img2: 'tspunisher2.jpg',
+        img3: 'tspunisher3.jpg',
+    },
+
 ]
 
 export default marveldata;

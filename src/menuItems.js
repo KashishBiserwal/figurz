@@ -56,21 +56,18 @@ export const menuItems = [
         url: 'Marvel',
         submenu: [
           {
-            title: 'Thor',
-            url: 'thor'
+            title: 'Spiderman',
+            url: 'Hero/spiderman'
           },
           {
             title: 'Iron Man',
-            url: 'Ironman'
+            url: 'Hero/ironman'
           },
           {
             title: 'Captain America',
-            url: 'captainamerica'
+            url: 'Hero/captainamerica'
           },
-          {
-            title: 'Hulk',
-            url: 'hulk'
-          },
+          
         ]
       },
       {

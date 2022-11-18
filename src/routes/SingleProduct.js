@@ -1,5 +1,9 @@
 import { useParams } from 'react-router-dom';
-import data from '../Marvel/MarvelData'
+import MarvelData from '../Marvel/MarvelData'
+import DcData from '../DC/DcData'
+
+const data = MarvelData.concat(DcData);
+
 const SingleProduct = () => {
   const { productId } = useParams();
   const product = data.find((product) => product.id === productId);

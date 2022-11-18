@@ -7,7 +7,7 @@ const MarvelFilterContext = createContext();
 const initialState = {
     marvel_filter_products: [],
     all_marvel_products: [],
-    sorting_value: "lowest",
+    sorting_value: "",
     filters:{
         text: '',
         category: '',

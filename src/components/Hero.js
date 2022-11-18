@@ -1,15 +1,21 @@
 import { useParams } from 'react-router-dom';
-import data from '../Marvel/MarvelData'
+import Marveldata from '../Marvel/MarvelData'
+import Dcdata from '../DC/DcData'
 import Product from '../components/Product';
+
+const data = Marveldata.concat(Dcdata);
 
 const Hero = () => {
   const { hero } = useParams();
   const product = data.filter((product) => product.hero === hero);
   console.log(product);
   return (
-      product.map((item) => (
+    <div>
+      <img src={`images/${hero}.jpg`} alt='no hero banner'></img>
+      {product.map((item) => (
         <Product key={item.id} {...item}/>
-      ))
+      ))}
+    </div>
   );
 };
 
