@@ -11,7 +11,7 @@ const SingleProduct = () => {
   return (
       <div>
         <h2>{name}</h2>
-        <h4>{price}</h4>
+        <h4>&#8377;{price}</h4>
       </div>
   );
 };

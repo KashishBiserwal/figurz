@@ -10,25 +10,6 @@ export default function RecommendedForYou() {
             return <Product key={item.id} {...item}/>
           })}
         </div>
-        {/* <div className='content-boxes'>
-            <div className='categories'>
-                <div className='cat-item'>
-                    <Product />
-                </div>
-                <div className='cat-item'>
-                    <img src='images/thor-p.jpg' alt='no'/>
-                    <h3 className='cat'>Item</h3>
-                </div>
-                <div className='cat-item'>
-                    <img src='images/thor-p.jpg' alt='no'/>
-                    <h3 className='cat'>Item</h3>
-                </div>
-                <div className='cat-item'>
-                    <img src='images/thor-p.jpg' alt='no'/>
-                    <h3 className='cat'>Item</h3>
-                </div>
-            </div>
-        </div> */}
     </div>
   )
 }
@@ -56,7 +37,7 @@ const recommended = [
     },
     {
         id: 'd12',
-        name: 'Wonder Woman Costume T-Shirt',
+        name: 'Wonder Woman Costume',
         category: 'T-Shirts',
         hero: 'wonderwoman',
         price: 350,
@@ -67,7 +48,7 @@ const recommended = [
     },
     {
         id: 'm1',
-        name: 'Spider-Man Venom Short Sleeve T-Shirt',
+        name: 'Venom T-Shirt',
         category: 'T-Shirts',
         hero: 'spiderman',
         price: 350,

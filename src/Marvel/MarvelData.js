@@ -9,6 +9,7 @@ const marveldata = [
         img2: 'tsvenom2.jpg',
         img3: 'tsvenom3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'm2',
@@ -20,6 +21,7 @@ const marveldata = [
         img2: 'tsironman2.jpg',
         img3: 'tsironman3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'm3',
@@ -31,17 +33,19 @@ const marveldata = [
         img2: 'tsxmensymbol2.jpg',
         img3: 'tsxmensymbol3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'm4',
         name: 'Captain America Distressed Shield Navy T-Shirt',
         category: 'T-Shirts',
-        hero: 'captainAmerica',
+        hero: 'captain america',
         price: 350,
         img1: 'tscaptain1.jpg',
         img2: 'tscaptain2.jpg',
         img3: 'tscaptain3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'm5',
@@ -53,17 +57,19 @@ const marveldata = [
         img2: 'cspiderman2.jpg',
         img3: 'cspiderman3.jpg',
         img4: 'cspiderman4.jpg',
+        gender: 'men'
     },
     {
         id: 'm6',
         name: 'Black Panther Black Camo Fitted Mesh Back Hat',
         category: 'Hats',
-        hero: 'blackPanther',
+        hero: 'black panther',
         price: 150,
         img1: 'cblackpanther1.jpg',
         img2: 'cblackpanther2.jpg',
         img3: 'cblackpanther3.jpg',
         img4: 'cblackpanther4.jpg',
+        gender: 'men'
     },
     {
         id: 'm7',
@@ -75,6 +81,7 @@ const marveldata = [
         img2: 'cpunisher2.jpg',
         img3: 'cpunisher3.jpg',
         img4: 'cpunisher4.jpg',
+        gender: 'men'
     },
     {
         id: 'm8',
@@ -86,6 +93,7 @@ const marveldata = [
         img2: 'fmarvel2.jpg',
         img3: 'fmarvel3.jpg',
         img4: 'fmarvel4.jpg',
+        gender: 'men'
     },
     {
         id: 'm9',
@@ -97,15 +105,17 @@ const marveldata = [
         img2: 'favengers2.jpg',
         img3: 'favengers3.jpg',
         img4: 'favengers4.jpg',
+        gender: 'men'
     },
     {
         id: 'm10',
         name: 'Doctor Strange Multiverse of Madness Funko Pop! Vinyl Figure',
         category: 'Figures',
-        hero: 'doctorStrange',
+        hero: 'doctorstrange',
         price: 100,
         img1: 'fidoctor1.jpg',
         img2: 'fidoctor2.jpg',
+        gender: 'men'
     },
     {
         id: 'm11',
@@ -115,6 +125,7 @@ const marveldata = [
         price: 100,
         img1: 'fiwolverine1.jpg',
         img2: 'fiwolverine2.jpg',
+        gender: 'men'
     },
     {
         id: 'm12',
@@ -124,6 +135,7 @@ const marveldata = [
         price: 400,
         img1: 'ts2ironman1.jpg',
         img2: 'ts2ironman2.jpg',
+        gender: 'men'
     },
     {
         id: 'm13',
@@ -134,6 +146,7 @@ const marveldata = [
         img1: 'tspunisher1.jpg',
         img2: 'tspunisher2.jpg',
         img3: 'tspunisher3.jpg',
+        gender: 'men'
     },
 
 ]

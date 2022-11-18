@@ -11,10 +11,13 @@ const Hero = () => {
   console.log(product);
   return (
     <div>
-      <img src={`images/${hero}.jpg`} alt='no hero banner'></img>
+      <img src={`images/${hero}.jpg`} alt='no hero banner' className='hero-banner'></img>
+      <h2 className='hero-title'>{`${hero} Merchandise`}</h2>
+      <div className='hero-products'>
       {product.map((item) => (
         <Product key={item.id} {...item}/>
       ))}
+      </div>
     </div>
   );
 };

@@ -9,6 +9,7 @@ const DcData = [
         img2: 'tsbatman2.jpg',
         img3: 'tsbatman3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'd11',
@@ -20,17 +21,19 @@ const DcData = [
         img2: 'tsflash2.jpg',
         img3: 'tsflash3.jpg',
         img4: 'tshirtsize.jpg',
+        gender: 'men'
     },
     {
         id: 'd12',
         name: 'Wonder Woman Costume T-Shirt',
         category: 'T-Shirts',
-        hero: 'wonderwoman',
+        hero: 'wonder woman',
         price: 350,
         img1: 'tsww1.jpg',
         img2: 'tsww2.jpg',
         img3: 'tsww3.jpg',
         img4: 'tsww4.jpg',
+        gender: 'women'
     },
     {
         id: 'd2',
@@ -42,6 +45,7 @@ const DcData = [
         img2: 'hbatman2.jpg',
         img3: 'hbatman3.jpg',
         img4: 'hbatman4.jpg',
+        gender: 'men'
     },
     {
         id: 'd3',
@@ -53,6 +57,7 @@ const DcData = [
         img2: 'h2batman2.jpg',
         img3: 'h2batman3.jpg',
         img4: 'h2batman4.jpg',
+        gender: 'men'
     },
     {
         id: 'd4',
@@ -62,6 +67,7 @@ const DcData = [
         price: 350,
         img1: 'hosuperman1.jpg',
         img2: 'hosuperman2.jpg',
+        gender: 'men'
     },
     {
         id: 'd5',
@@ -73,6 +79,7 @@ const DcData = [
         img2: 'hflash2.jpg',
         img3: 'hflash3.jpg',
         img4: 'hflash4.jpg',
+        gender: 'men'
     },
     {
         id: 'd6',
@@ -82,6 +89,7 @@ const DcData = [
         price: 350,
         img1: 'ssuperman1.jpg',
         img2: 'ssuperman2.jpg',
+        gender: 'men'
     },
     {
         id: 'd7',
@@ -91,6 +99,7 @@ const DcData = [
         price: 350,
         img1: 's2superman1.jpg',
         img2: 's2superman2.jpg',
+        gender: 'men'
     },
     {
         id: 'd8',
@@ -99,6 +108,7 @@ const DcData = [
         hero: 'flash',
         price: 350,
         img1: 'sflash1.jpg',
+        gender: 'men'
     },
     {
         id: 'd9',
@@ -108,15 +118,17 @@ const DcData = [
         price: 350,
         img1: 'sbatman1.jpg',
         img2: 'sbatman2.jpg',
+        gender: 'men'
     },
     {
         id: 'd10',
         name: 'Wonder Woman socks',
         category: 'Socks',
-        hero: 'wonderwoman',
+        hero: 'wonder woman',
         price: 100,
         img1: 'sww1.jpg',
         img2: 'sww2.jpg',
+        gender: 'women'
     },
     
 ]
