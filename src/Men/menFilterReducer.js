@@ -74,7 +74,7 @@ const menFilterReducer = (state, action) => {
                     return item.name.toLowerCase().includes(text)
                 })
             }
-            if(category != 'All') {
+            if(category !== 'All') {
                 tempFilterProduct = tempFilterProduct.filter((item) => {
                     return item.category === category;
                 })

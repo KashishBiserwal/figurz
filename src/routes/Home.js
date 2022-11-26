@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div>
       <div className='banner'>
-        <img src='images/banner.png' className='banner-image'/>
+        <img src='images/banner.png' alt='banner' className='banner-image'/>
         <div className='banner-links'>
-            <div className='banner-link-img'><Link to='Marvel'><img src='images/marvelbanner.jpg'/></Link></div>
-            <div className='banner-dc banner-link-img'><Link to='dc'><img src='images/dcbanner.jpg'/></Link></div>
+            <div className='banner-link-img'><Link to='Marvel'><img src='images/marvelbanner.jpg' alt='marvel banner'/></Link></div>
+            <div className='banner-dc banner-link-img'><Link to='dc'><img src='images/dcbanner.jpg' alt='dc banner'/></Link></div>
         </div>
       </div>
       <div className='sale p'><h2>UPTO 40% OFF</h2></div>

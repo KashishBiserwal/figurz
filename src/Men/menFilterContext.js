@@ -42,7 +42,7 @@ export const MenFilterContextProvider = ({children}) => {
 
     useEffect(()=>{
         dispatch({type: "SORTING_PRODUCTS", payload: products})
-    }, [ state.sorting_value, state.filters]) 
+    }, [ state.sorting_value, state.filters, products]) 
     
     useEffect(()=>{
         dispatch({type: 'FILTER_PRODUCTS'})
@@ -51,7 +51,7 @@ export const MenFilterContextProvider = ({children}) => {
 
     useEffect(()=>{
         dispatch({type: 'LOAD_MEN_FILTER_PRODUCTS', payload: products})
-    }, []) 
+    }, [products]) 
 
     return (
         <MenFilterContext.Provider value={{...state, sorting, updateFilterValue, clearFilters}}>

@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import { Link, NavLink } from 'react-router-dom';
 import Swipe from './Swipe';
-import { BsSearch, BsCart } from 'react-icons/bs';
+import { BsCart } from 'react-icons/bs';
 import { useCartContext } from "../Cart/cart-context"
 
 const Header = () => {

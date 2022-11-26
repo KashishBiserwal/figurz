@@ -8,7 +8,7 @@ export default function Cart() {
     return (
       <div className="empty">
         <h2 style={{textAlign: 'center'}}>Your Cart Is Empty!</h2>
-        <img src="images/empty-cart.svg"></img>
+        <img src="images/empty-cart.svg" alt="cart"/>
       </div>
     )
   }
