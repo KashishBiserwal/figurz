@@ -64,8 +64,7 @@ const menFilterReducer = (state, action) => {
                     [name]: value,
                 }
             }
-
-        
+ 
         case 'FILTER_PRODUCTS':
             let {all_men_products} = state;
             let tempFilterProduct = [...all_men_products];
@@ -75,7 +74,7 @@ const menFilterReducer = (state, action) => {
                     return item.name.toLowerCase().includes(text)
                 })
             }
-            if(category) {
+            if(category != 'All') {
                 tempFilterProduct = tempFilterProduct.filter((item) => {
                     return item.category === category;
                 })
@@ -96,10 +95,10 @@ const menFilterReducer = (state, action) => {
                 filters: {
                     ...state.filters,
                     text: '',
-                    category: '',
-                    maxPrice: 0,
+                    category: 'All',
+                    maxPrice: state.filters.maxPrice,
                     price: state.filters.maxPrice,
-                    minPrice: state.filters.maxPrice,
+                    minPrice: state.filters.minPrice,
                 }
             }
 

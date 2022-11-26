@@ -10,6 +10,7 @@ import Mens from '../Men/Mens';
 import Women from '../routes/Women';
 import Kids from '../routes/Kids';
 import Figures from '../routes/Figures';
+import Cart from '../Cart/Cart';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path=':productId' element={<SingleProduct />} />
           <Route path="undefined" element={<Error />} />
           <Route path="Hero/:hero" element={<Hero />} />
+          <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

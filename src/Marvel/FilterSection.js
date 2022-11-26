@@ -4,8 +4,7 @@ import FormatPrice from '../components/FormatPrice';
 import Sort from './Sort';
 
 export default function FilterSection() {
-
-    const {filters:{text, price, maxPrice, minPrice},
+    const {filters:{text, category, price, maxPrice, minPrice},
         updateFilterValue, 
         all_marvel_products,
         clearFilters
@@ -43,6 +42,7 @@ export default function FilterSection() {
                 type='button'
                 name='category'
                 value={item} 
+                className={item === category ? 'category-active' : ''}
                 onClick={updateFilterValue}
             >
                 {item}

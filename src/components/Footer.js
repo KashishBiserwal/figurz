@@ -1,10 +1,16 @@
 import React from 'react'
+import Form from './Form'
+import QuickLinks from './QuickLinks'
 
 export default function Footer() {
   return (
     <div id='footer'>
-        <div className='logo'>FIGURZ</div>
-        <p>&copy; 2022 Kashish</p>
+        <div>
+          <div className='logo'>FIGURZ</div>
+          <p>!&copy; 2022 Kashish</p>
+        </div>
+        <QuickLinks />
+        <Form />
     </div>
   )
 }

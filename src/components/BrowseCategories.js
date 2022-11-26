@@ -8,27 +8,27 @@ export default function BrowseCategories() {
         <div className='content-boxes'>
             <div className='categories'>
                 <Link to='Men'>
-                    <div className='cat-item'>
+                    <div className='Product-product p20'>
                         <img src='images/mens.jpg' />
                         <h3 className='cat'>MEN</h3>
                     </div>
                 </Link>
                 <Link to='Women'>
-                <div className='cat-item'>
+                <div className='Product-product p20'>
                     <img src='images/womens.jpg' />
                     <h3 className='cat'>WOMEN</h3>
                 </div>
                 </Link>
                 <Link to='Kids'>
-                <div className='cat-item'>
+                <div className='Product-product p20'>
                     <img src='images/kids.jpg' />
                     <h3 className='cat'>KIDS</h3>
                 </div>
                 </Link>
                 <Link to='Figures'>
-                <div className='cat-item'>
+                <div className='Product-product p20'>
                     <img src='images/figures.jpg' />
-                    <h3 className='cat'>FIGURES/DOLLS</h3>
+                    <h3 className='cat'>DOLLS</h3>
                 </div>
                 </Link>
             </div>

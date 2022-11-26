@@ -1,53 +1,4 @@
 export const menuItems = [
-  // {
-  //   title: 'Shop by Category',
-  //   submenu: [
-  //     {
-  //       title: 'T-shirts',
-  //       url: 'marvel',
-  //       submenu: [
-  //         {
-  //           title: 'Men',
-  //           url: 'thor'
-  //         },
-  //         {
-  //           title: 'Women',
-  //           url: 'ironman'
-  //         },
-  //         {
-  //           title: 'Kids',
-  //           url: 'captainamerica'
-  //         },
-  //         {
-  //           title: 'Hulk',
-  //           url: 'hulk'
-  //         },
-  //       ]
-  //     },
-  //     {
-  //       title: 'DC',
-  //       url: 'dc',
-  //       submenu: [
-  //         {
-  //           title: 'Batman',
-  //           url: 'batman'
-  //         },
-  //         {
-  //           title: 'Flash',
-  //           url: 'flash'
-  //         },
-  //         {
-  //           title: 'Joker',
-  //           url: 'joker'
-  //         },
-  //         {
-  //           title: 'Wonder Woman',
-  //           url: 'wonderwoman'
-  //         },
-  //       ]
-  //     },
-  //   ],
-  // },
   {
     title: 'Shop by Hero',
     submenu: [
@@ -65,15 +16,11 @@ export const menuItems = [
           },
           {
             title: 'Captain America',
-            url: 'Hero/captainamerica'
-          },
-          {
-            title: 'Iron Man',
-            url: 'Hero/ironman'
+            url: 'Hero/captain america'
           },
           {
             title: 'Black Panther',
-            url: 'Hero/blackpanther'
+            url: 'Hero/black panther'
           },
           {
             title: 'The Punisher',
@@ -93,7 +40,7 @@ export const menuItems = [
           },
           {
             title: 'Wonder Woman',
-            url: 'Hero/wonderwoman'
+            url: 'Hero/wonder woman'
           },
           {
             title: 'Flash',
@@ -106,5 +53,22 @@ export const menuItems = [
         ]
       },
     ],
+  },
+  {
+    title: 'Shop by Category',
+    submenu: [
+      {
+        title: 'Men',
+        url: 'Men'
+      },
+      {
+        title: 'Women',
+        url: 'Women'
+      },
+      {
+        title: 'Kids',
+        url: 'Kids'
+      },
+    ]
   },
 ];

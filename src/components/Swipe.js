@@ -11,6 +11,32 @@ export default function Swipe() {
           slidesPerView={12}
           loop={true}
           grabCursor={true}
+          breakpoints={{
+            1200: {
+              width: 1150,
+              slidesPerView: 11,
+            },
+            768: {
+              width: 768,
+              slidesPerView: 7,
+            },
+            600: {
+              width: 600,
+              slidesPerView: 6,
+            },
+            400: {
+              width: 400,
+              slidesPerView: 5,
+            },
+            200: {
+              width: 200,
+              slidesPerView: 4
+            },
+            100: {
+              width: 100,
+              slidesPerView: 2
+            }
+          }}
         >
           <SwiperSlide><Box link='Hero/superman' img='images/nav-swiper/ssm.jpeg'/></SwiperSlide>
           <SwiperSlide><Box link='Hero/flash' img='images/nav-swiper/sf.jpeg'/></SwiperSlide>

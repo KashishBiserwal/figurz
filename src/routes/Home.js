@@ -16,7 +16,7 @@ export default function Home() {
       <div className='sale p'><h2>UPTO 40% OFF</h2></div>
       <BrowseCategories />
       <FearturedHeroes />
-      <div className='sale p'><h2>ENJOY FREE SHIPING ON ORDERS &#8377; 500 AND OVER</h2></div>
+      <div className='sale p'><h2>ENJOY FREE SHIPING ON ORDERS &#8377; 750 AND OVER</h2></div>
       <RecommendedForYou />
     </div>
   )

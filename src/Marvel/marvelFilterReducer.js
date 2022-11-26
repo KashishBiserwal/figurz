@@ -75,7 +75,7 @@ const marvelFilterReducer = (state, action) => {
                     return item.name.toLowerCase().includes(text)
                 })
             }
-            if(category) {
+            if(category != 'All') {
                 tempFilterProduct = tempFilterProduct.filter((item) => {
                     return item.category === category;
                 })
@@ -91,15 +91,16 @@ const marvelFilterReducer = (state, action) => {
             }
 
         case 'CLEAR_FILTERS':
+            console.log('filter cleared');
             return {
                 ...state,
                 filters: {
                     ...state.filters,
                     text: '',
-                    category: '',
-                    maxPrice: 0,
+                    category: 'All',
+                    maxPrice: state.filters.maxPrice,
                     price: state.filters.maxPrice,
-                    minPrice: state.filters.maxPrice,
+                    minPrice: state.filters.minPrice,
                 }
             }
 

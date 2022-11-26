@@ -10,7 +10,7 @@ const initialState = {
     sorting_value: "",
     filters:{
         text: '',
-        category: '',
+        category: 'All',
         maxPrice: 0,
         price: 0,
         minPrice: 0,
@@ -29,12 +29,11 @@ export const MarvelFilterContextProvider = ({children}) => {
     const updateFilterValue = (event) => {
         let name = event.target.name;
         let value = event.target.value;
-        console.log('filters value updated');
         return dispatch({type: 'UPDATE_FILTERS_VALUE', payload:{name, value}});
     };
 
     const clearFilters = () => {
-        dispatch({type: 'CLEAR_FILTERS'})
+        dispatch({type: 'CLEAR_FILTERS'});
     }
 
     useEffect(()=>{

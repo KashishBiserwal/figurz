@@ -5,7 +5,7 @@ export default function RecommendedForYou() {
   return (
     <div className='content-container p'>
         <h3 className='container-title'>Recommended Products</h3>
-        <div className="recommended-products">
+        <div className="categories">
           {recommended.map((item) => {
             return <Product key={item.id} {...item}/>
           })}
@@ -39,7 +39,7 @@ const recommended = [
         id: 'd12',
         name: 'Wonder Woman Costume',
         category: 'T-Shirts',
-        hero: 'wonderwoman',
+        hero: 'wonder woman',
         price: 350,
         img1: 'tsww1.jpg',
         img2: 'tsww2.jpg',
