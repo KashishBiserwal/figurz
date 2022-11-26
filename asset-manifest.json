@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/figurz/static/css/main.d5d0410c.css",
+    "main.js": "/figurz/static/js/main.c61e3644.js",
+    "index.html": "/figurz/index.html",
+    "main.d5d0410c.css.map": "/figurz/static/css/main.d5d0410c.css.map",
+    "main.c61e3644.js.map": "/figurz/static/js/main.c61e3644.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5d0410c.css",
+    "static/js/main.c61e3644.js"
+  ]
+}
