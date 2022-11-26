@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/figurz/static/css/main.d5d0410c.css",
-    "main.js": "/figurz/static/js/main.1d1b4a21.js",
+    "main.js": "/figurz/static/js/main.dafd3a14.js",
     "index.html": "/figurz/index.html",
     "main.d5d0410c.css.map": "/figurz/static/css/main.d5d0410c.css.map",
-    "main.1d1b4a21.js.map": "/figurz/static/js/main.1d1b4a21.js.map"
+    "main.dafd3a14.js.map": "/figurz/static/js/main.dafd3a14.js.map"
   },
   "entrypoints": [
     "static/css/main.d5d0410c.css",
-    "static/js/main.1d1b4a21.js"
+    "static/js/main.dafd3a14.js"
   ]
 }
