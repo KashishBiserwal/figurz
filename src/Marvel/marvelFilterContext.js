@@ -19,7 +19,6 @@ const initialState = {
 
 export const MarvelFilterContextProvider = ({children}) => {
 
-
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const sorting = () => {

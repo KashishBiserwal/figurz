@@ -5,7 +5,7 @@ export default function RecommendedForYou() {
   return (
     <div className='content-container p'>
         <h3 className='container-title'>Recommended Products</h3>
-        <div className="categories">
+        <div className="categories rec" >
           {recommended.map((item) => {
             return <Product key={item.id} {...item}/>
           })}

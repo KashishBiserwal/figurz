@@ -18,18 +18,18 @@ const SingleProduct = () => {
             {
               imageArray.map((items, index)=> {
                 return (
-                  items && <img src={`images/products/${items}`} key={index} onClick={() => setMainImage(items)}/>
+                  items && <img src={`images/products/${items}`} key={index} onClick={() => setMainImage(items)} alt='something'/>
                 )
               })
             }
           </div>
           <div className='main'>
-            <img src={`images/products/${mainImage}`}/>
+            <img src={`images/products/${mainImage}`} alt='something'/>
           </div>
         </div>
         <div className='details'>
           <h2 style={{textTransform: 'uppercase'}}>{name}</h2>
-          <h4 style={{fontSize: '2rem'}}><span style={{color: '#01aade'}}>&#8377;{price}</span></h4>
+          <h4><span style={{color: '#01aade'}}>&#8377;{price}</span></h4>
           <p>Available:
             <span>{stock > 0 ? ' In Stock' : ' Not Available'}</span>
           </p>

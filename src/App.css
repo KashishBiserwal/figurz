@@ -10,6 +10,9 @@ body{
 .banner{
   display: flex;
 }
+.details h4{
+  font-size: 2rem;
+}
 .banner-image{
   width:70%;
 }
@@ -512,6 +515,7 @@ button:hover{
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background-color: white;
 }
 .hero-banner{
   width: 100%;
@@ -541,9 +545,8 @@ button:hover{
   display: flex;
   border-radius: 5px ;
 }
-.single-product-page .images{
+.images{
   width: 50%;
-  display: flex;
 }
 .single-product-page .details{
   width: 50%;
@@ -564,8 +567,8 @@ button:hover{
   cursor: pointer;
 }
 .main{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  align-items: center;
   padding: 1rem;
 }
 .main img{
@@ -848,16 +851,104 @@ header{
 .menu-items > a, .menu-items button{
   padding: 0.7rem 1rem;
 }
+.hero-products{
+  padding: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
 }
 @media only screen and (max-width: 435px){
 .box img{
   width: 55px;
   height: 45px;
 }
+#footer{
+  padding: 2rem;
+}
 .scrollbar{
   display: none;
 }
 .menus{
   margin-top: 1rem;
+}
+.single-product-page{
+  display: grid;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.Product-product {
+  margin: 1rem 1rem;
+}
+.categories {
+  grid-template-columns: repeat(2, 1fr);
+}
+.filtered-products {
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 0;
+}
+.Product-product h2{
+  font-size: 10px;
+}
+.price{
+  font-size: 12px;
+}
+.filter-section{
+  display: none;
+}
+.hero-products {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.featured-name{
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 13px;
+}
+.single-product-page .details{
+  width: 100%;
+  margin-left: 0;
+  font-size: smaller;
+}
+.details h2{
+  font-size: small;
+}
+.details h4{
+  font-size: 1rem;
+}
+.addtocart{
+  font-size: 0.8rem;
+}
+.single-product-page .images{
+  width: 100%;
+}
+.cart-hide{
+  display: none;
+}
+.cart-headings, .cart-product{
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.cart-item-img{
+  max-width: 35px;
+}
+.img-name{
+  font-size: 13px;
+}
+.rec{
+  background-color: white;
+  border-radius: 5px;
+  border: 0;
+}
+}
+@media only screen and (max-width: 320px){
+  .images{
+    display: flex;
+    flex-direction: column;
+  }
+  .all {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
 }
 }
