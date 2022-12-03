@@ -20,10 +20,6 @@ const Header = () => {
               </div>
             </NavLink> 
           </div>
-          {/* <div className='search-bar'>
-            <BsSearch className='search-icon'/>
-            <input type='text' placeholder='Search...'></input>
-          </div> */}
         </div>
         <Swipe className='mid'/>
         <Navbar className='bottom'/>

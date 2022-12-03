@@ -3,7 +3,7 @@ import { useDcFilterContext } from '../DC/DcFilterContext'
 import FormatPrice from '../components/FormatPrice';
 import DcSort from './DcSort';
 
-export default function DcFilterSection() {
+export default function DcFilterSection({show}) {
 
     const {filters:{text, price, maxPrice, minPrice},
         updateFilterValue, 
@@ -21,7 +21,7 @@ export default function DcFilterSection() {
     const categoryOnlyData  = getUniqueData(all_dc_products, 'category');
 
   return (
-    <div className='filter-section'>
+    <div className={show ? 'filter-section showFilters': 'filter-section hideFilters'}>
         <DcSort />
         <div className='search'>
             <form onSubmit={(e) => e.preventDefault()}>

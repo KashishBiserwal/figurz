@@ -3,7 +3,7 @@ import { useMarvelFilterContext } from '../Marvel/marvelFilterContext'
 import FormatPrice from '../components/FormatPrice';
 import Sort from './Sort';
 
-export default function FilterSection() {
+export default function FilterSection({show}) {
     const {filters:{text, category, price, maxPrice, minPrice},
         updateFilterValue, 
         all_marvel_products,
@@ -20,7 +20,7 @@ export default function FilterSection() {
     const categoryOnlyData  = getUniqueData(all_marvel_products, 'category');
 
   return (
-    <div className='filter-section'>
+    <div className={show ? 'filter-section showFilters': 'filter-section hideFilters'}>
         <Sort />
         <div className='search'>
             <form onSubmit={(e) => e.preventDefault()}>

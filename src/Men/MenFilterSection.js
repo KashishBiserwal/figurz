@@ -3,7 +3,7 @@ import { useMenFilterContext } from '../Men/menFilterContext'
 import FormatPrice from '../components/FormatPrice';
 import MenSort from './menSort';
 
-export default function MenFilterSection() {
+export default function MenFilterSection({show}) {
 
     const {filters:{text, price, maxPrice, minPrice},
         updateFilterValue, 
@@ -21,7 +21,7 @@ export default function MenFilterSection() {
     const categoryOnlyData  = getUniqueData(all_men_products, 'category');
 
   return (
-    <div className='filter-section'>
+    <div className={show ? 'filter-section showFilters': 'filter-section hideFilters'}>
         <MenSort />
         <div className='search'>
             <form onSubmit={(e) => e.preventDefault()}>
