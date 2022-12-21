@@ -445,8 +445,16 @@ article h2{
 .categories-list button:hover{
   background-color: #dbdbdb;
 }
+.categories-list button:focus{
+  background-color: #01aade;
+}
+
 .price-range{
   margin: 2rem 0;
+  accent-color: #01aade;
+}
+.price-range input{
+  height: 5px;
 }
 
 .clear-filter button{
@@ -725,7 +733,9 @@ button:focus {
   background: transparent;
   border: 0;
   margin-bottom: 1rem;
+  display: none;
 }
+
 
 @media only screen and (max-width: 1200px){
 header{
@@ -817,6 +827,9 @@ header{
 .hero-products{
   padding: 1rem;
   grid-template-columns: repeat(1, 1fr);
+}
+.toggle{
+  display: block;
 }
 }
 @media only screen and (max-width: 435px){

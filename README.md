@@ -1,2 +1,2 @@
 # FIGURZ
-Ecommerce website for action figures.
+Ecommerce website for superhero merchandise.

@@ -5,9 +5,8 @@ export default function ToggleFilter(props) {
     function handleClick(){
         setShow(prev => !prev)
     }
-    console.log(props.show);
   return (
-    <div>
+    <div className='toggle-btn'>
         <button className='toggle' onClick={handleClick}>{show ? 'Show' : 'Hide'} Filters</button>
     </div>
   )
